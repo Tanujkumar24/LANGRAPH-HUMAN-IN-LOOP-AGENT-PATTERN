@@ -86,3 +86,17 @@ This project is licensed under the MIT License.
 Special thanks to the developers of LangGraph and the contributors to the human-in-the-loop concept.
 
 For more information on human-in-the-loop implementations with LangGraph, refer to the [LangGraph Human-in-the-loop Documentation](https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/).
+
+## Workflow Overview
+
+Below is a high-level representation of the workflow:
+
+```mermaid
+graph TD
+    Start[START] --> |Action Initiated| HumanApproval[Human Approval Required?]
+    HumanApproval -->|Yes| ManualReview[Manual Review by Human]
+    HumanApproval -->|No| AutoProcess[Automated Processing]
+    ManualReview --> ActionTaken[Action Completed]
+    AutoProcess --> ActionTaken[Action Completed]
+    ActionTaken --> End[END]
+

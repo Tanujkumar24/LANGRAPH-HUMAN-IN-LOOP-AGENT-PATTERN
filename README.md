@@ -44,6 +44,19 @@ cd LANGRAPH-HUMAN-IN-LOOP-AGENT-PATTERN
 ```bash
 pip install -r requirements.txt
 ```
+## Workflow Overview
+
+Below is a high-level representation of the workflow:
+
+```mermaid
+graph TD
+    Start[START] --> |Action Initiated| HumanApproval[Human Approval Required?]
+    HumanApproval -->|Yes| ManualReview[Manual Review by Human]
+    HumanApproval -->|No| AutoProcess[Automated Processing]
+    ManualReview --> ActionTaken[Action Completed]
+    AutoProcess --> ActionTaken[Action Completed]
+    ActionTaken --> End[END]
+
 
 ### Usage
 

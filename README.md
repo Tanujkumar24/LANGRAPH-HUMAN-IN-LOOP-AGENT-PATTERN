@@ -1,6 +1,15 @@
 # Human-in-the-Loop System
 
 This project implements a **Human-in-the-Loop (HITL)** system, where human approvals are required for specific actions to ensure correctness. It uses state-of-the-art tools like LangChain, LangGraph, and a custom LLM (`ChatGroq`) to build robust workflows with actionable checkpoints.
+### Prerequisites
+- Python 3.8+
+- Required libraries:
+  - `langchain`
+  - `langgraph`
+  - `langchain-groq`
+  - `langchain-community-tools`
+  - `IPython`
+  - `json`
 
 ## Key Features
 

@@ -17,19 +17,7 @@ This project implements a **Human-in-the-Loop (HITL)** system, where human appro
 - **State Management**: Utilizes `LangGraph` to manage states and transitions effectively.
 - **Custom LLM Integration**: Employs the `ChatGroq` language model (e.g., `Gemma2-9b-It`) for natural language understanding and generation.
 - **Tool Nodes**: Implements tools for prebuilt and custom workflows.
-## Setup
 
-1. **Model Setup and Invocation**:
-   ```bash
-   from langchain_groq import ChatGroq
-
-# Initialize the Groq-based model
-llm = ChatGroq(model_name="Gemma2-9b-It")
-
-# Invoking the model with a greeting
-llm.invoke("hi")
-
-   ```
 ## Workflow Overview
 
 Below is a high-level representation of the workflow:

@@ -15,6 +15,12 @@ This project showcases how to implement such a system using LangGraph.
 - **LangGraph Agent Integration**: Utilizes LangGraph to manage the workflow of language models.
 - **Tool Integration**: Incorporates external tools to enhance the agent's capabilities.
 - **Human Feedback Loop**: Allows human intervention to review and modify outputs, ensuring accuracy.
+## Key Features
+
+- **Human-in-the-Loop Workflow**: Integrates human oversight at critical junctures of the decision-making process.
+- **State Management**: Utilizes `LangGraph` to manage states and transitions effectively.
+- **Custom LLM Integration**: Employs the `ChatGroq` language model (e.g., `Gemma2-9b-It`) for natural language understanding and generation.
+- **Tool Nodes**: Implements tools for prebuilt and custom workflows.
 
 ## Getting Started
 
